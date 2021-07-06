@@ -1,52 +1,32 @@
-// Las variables son una caracteristica de cualquier lenguaje de programación
+/** forma de declaran antes del ecmascript 6 */
 
-// existen 3 formas de crear variables en JavaScript, en nuevas versiones solo se utilizan 2:
+// Inicializar una variable con un valor
+var producto = "Monitor de 24 Pulgadas";
+// las variables se puede reasignar
+producto = 'Monitor de 19 pulgadas';
 
-// Variables con var
+// Javascript es un lenguaje d etipo dinamico, no se especifica tipo de Dato
+producto = 20
+// si queremos tipar las variables. Podemos utilizar typeScript
 
-var producto = 'Monitor 23 Pulgadas'; // Inicializamos una variable con un valor;
+//se puede inicializar sin valor y asignarlo después
+var disponibles;
+    disponibles  = true;
+    disponibles = false;
+    // inicializar múltiples variables.
+var  categoría = 'Computadora',
+     marca= 'Marca Famosa',
+     calificacion= 5;
+// las variables no pueden iniciar con números
 
-// Las variables también se pueden reasignar
-producto = 'Monitor de 19 Pulgadas';
-
-console.log(producto);
-
-// Javascript es un lenguaje de tIpo Dinamico,
-// No se especifican tipos de datos cuando
-// se crea la variable
-var precio = 200;
-console.log(precio);
-
-// También se puede inicializar una variable sin valor y asignarlo después
-
-var disponible;
-disponible = true;
-
-
-// Inicializar múltiples variables
-var categoria = 'Computadoras',
-    marca = 'Marca Famosa',
-    calificacion = 5;
-
-console.log(categoria)
-console.log(marca)
-console.log(calificacion)
-
-
-// Reglas de las variables:
-
-// Pueden tener: letras, numeros, _
-// No pueden iniciar con numero
 // var 99dias;
 var dias99;
-
-var _01;
 // var 01_;
+var _01;
+var _usuario;
 
-// Estilos para nombrar variables con más de una palabra
+var nombreProducto;
+var nombre_producto_categoria_precio;
+var Producto;
 
-// más de una palabra.
-var  nombreProducto = 'Monitor 30 Pulgadas'; // CamelCase
-var nombre_producto = 'Monitor 30 Pulgadas'; //underscore
-var NombreProducto = 'Monitor 30 Pulgadas'; // pascal case
-var nombreproducto = 'Monitor 30 Pulgadas';
+
