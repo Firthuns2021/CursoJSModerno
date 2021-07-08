@@ -9,23 +9,28 @@ const producto = {
 
 
 // const nombre = producto.nombre;
-
-
+//
+// console.log(nombre);
 
 
 // Otra forma de hacerlo y que también es nueva, es con algo llamado object destructuring...
 
-// Destructuring significa, sacar de una esctructura, puede ser complejo, no lo es tanto sobretodo cuando lo practicas
+// Destructuring significa, sacar de una esctructura, puede ser complejo,
+// no lo es tanto sobretodo cuando lo practicas.
+// ademas de extraer el dato del objeto , estamos creando una variable
 
 const { nombre } = producto;
+console.log(nombre);
 
+const { precio,  disponible } = producto;
+console.log(precio, disponible);
 
 // si deseas extraer más variables;
-const { precio } = producto;
+// const { precio } = producto;
+//
+// console.log(nombre)
+// console.log(precio)
 
-console.log(nombre)
-console.log(precio)
+// O puedes hacerlo mejor con
 
-// O puedes hacerlo mejor con 
-
-const {nombre, precio} = producto;
+// const {nombre, precio} = producto;

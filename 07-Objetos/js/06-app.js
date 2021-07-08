@@ -6,15 +6,18 @@
 // console.log(producto);
 
 
-// En el caso de los objetos veremos que tienen un comportamiento diferente, ya que sus propiedades si se pueden reescribir.
+// En el caso de los objetos veremos que tienen un comportamiento diferente,
+// ya que sus propiedades si se pueden reescribir.
 
 const producto = {
     nombre: "Monitor 20 pulgadas",
-    precio: 30,
+    precio: 300,
     disponible: true
 }
 
+console.log(producto);
 
+delete producto.precio;
 console.log(producto);
 
 producto.disponible = false;

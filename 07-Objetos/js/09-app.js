@@ -1,4 +1,6 @@
-// Veamos como unir 2 objetos, esto llega a ser muy común ya que algunas veces en una base de datos obtienes el ID del cliente y también tienes los clientes que pertenecen a ese ID y te gustaría unirlos
+// Veamos como unir 2 objetos, esto llega a ser muy común ya que algunas
+// veces en una base de datos obtienes el ID del cliente y también tienes
+// los clientes que pertenecen a ese ID y te gustaría unirlos
 
 const producto = {
     nombre: "Monitor 20 pulgadas",
@@ -15,7 +17,10 @@ const medidas = {
 // Una forma de hacerlo es con el object method llamado assign
 
 const resultado = Object.assign(producto, medidas);
-
+console.log(resultado);
+//spread operator o rest operator, toma el valor del objeto y la asigna a una nueva
+const resultado2 = { ...producto, ...medidas};
+console.log(resultado2);
 // Otra forma de hacerlo que se considera más moderna es con El Spread Operator o Rest Operator, veamoslo en el siguiente video
 
-console.log(resultado);
+

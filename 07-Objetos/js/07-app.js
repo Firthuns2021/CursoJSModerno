@@ -1,6 +1,7 @@
-"use strict";
+"use strict"; // impide que haya malas practicas
 
-// Como vimos en el video anterior los objetos si se pueden modificar sus valores, veamos como prevenirlo en caso de que sea algo que desees hacer.
+// Como vimos en el video anterior los objetos si se pueden modificar sus valores,
+// veamos como prevenirlo en caso de que sea algo que desees hacer.
 
 const producto = {
     nombre: "Monitor 20 pulgadas",
@@ -8,15 +9,22 @@ const producto = {
     disponible: true
 }
 
+console.log('freeze 1', Object.freeze( producto ));
+console.log(producto);
+
+producto.disponible = false;
+producto.imagen = "image.jpg";
 console.log(producto);
 
 // Para ello utilizaremos un Object Method o Métodos de objetos.
 
-// Seguido me dicen, porque les dices Métodos, eso suena como algo de programación orientada a objetos
-// En realidad ese es su nombre, object methods, y en los siguientes videos los estaremos viendo algunos que son muy útiles.
+/** Seguido me dicen, porque les dices Métodos, eso suena como algo de
+ programación orientada a objetos. En realidad ese es su nombre, object methods,
+ y en los siguientes videos los estaremos viendo algunos que son muy útiles. */
 
-// Pero veamos como prevenir que un objeto sea modificado, para ello utilizaremos freeze, y funciona de la siguiente forma:
-
+// Pero veamos como prevenir que un objeto sea modificado, para ello utilizaremos freeze,
+// y funciona de la siguiente forma:
+console.log('freeze 2', Object.freeze( producto ));
 Object.freeze( producto ); // Freeze toma como argumento el objeto
 
 // producto.disponible = false;
@@ -32,6 +40,6 @@ Object.freeze( producto ); // Freeze toma como argumento el objeto
 
 // Finalmente si quieres revisar si un objeto esta congelado puedes usar
 
-console.log( Object.isFrozen(producto) );
+console.log('Pregunta si objeto esta congelado:', Object.isFrozen(producto) );
 
 console.log(producto);
