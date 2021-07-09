@@ -1,9 +1,9 @@
 // Finalmente otro tema importante cuando trabajas con el DOM, es la creación de HTML desde JavaScript..
 
-// Cuando publicas un tweet, tienes un textarea que al enviarlo se agrega al listado de tweets, de ahi la gente comienza a darle me gusta, así que veamos como hacerlo generar HTML desde JavaScript...
+// Cuando publicas un tweet, tienes un textarea que al enviarlo se agrega al listado de tweets, de ahi la
+// gente comienza a darle me gusta, así que veamos como hacerlo generar HTML desde JavaScript...
 
 
-// Y no te preocupes si todo lo que vemos en este video no queda claro, estaremos practicando mucho lo que es el DOM Scripting ya con muchos otros proyectos...
 
 // Vamos a crear un nuevo enlace... lo primero que hay que hacer es crear el elemento HTML, en este caso un enlace...
 
@@ -13,7 +13,7 @@ const enlace = document.createElement('A');
 
 enlace.textContent = 'Nuevo Enlace';
 
-// Despues vamos a asignar una ruta 
+// Despues vamos a asignar una ruta
 enlace.href = '/nuevo-enlace';
 // Finalmente se agrega el enlace donde deseas mostrarlo...
 

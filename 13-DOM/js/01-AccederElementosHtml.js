@@ -4,14 +4,16 @@
 
 let elemento;
 
-elemento = document;
-elemento = document.all;
-elemento = document.all[0];
+// elemento = document;
+// elemento = document.all; //deprecated
+// elemento = document.all[0]; //deprecated
 // elemento = document.head;
 // elemento = document.body;
 // elemento = document.domain;
 // elemento = document.URL;
 // elemento = document.characterSet;
+//
+//
 // elemento = document.contentType;
 // elemento = document.forms;
 // elemento = document.forms[0];
@@ -27,7 +29,7 @@ elemento = document.all[0];
 //
 // elemento = document.images;
 //
-// elemento = document.scripts;
+elemento = document.scripts;
 // elemento = document.scripts[2].getAttribute('src');
 
 console.log(elemento);

@@ -1,5 +1,5 @@
 :root {
-    --fuente-principal:  'Lato', sans-serif; 
+    --fuente-principal:  'Lato', sans-serif;
     --primario: #da595e;
     --obscuro: #484848;
     --claro: #ffffff;
@@ -15,6 +15,7 @@ body {
 h1 {
     font-weight: 400;
     font-size: 2rem;
+    /*visibility: hidden;*/
 }
 @media (min-width:768px) {
     h1 {
@@ -199,10 +200,10 @@ main > section {
     margin-bottom: 2rem;
     text-align: center;
 }
-@media (min-width:768px) { 
+@media (min-width:768px) {
     .premium .info {
         grid-column: 2 / 3;
-    }    
+    }
     .premium .info h2 {
         text-align: right;
     }

@@ -1,30 +1,34 @@
 // Veamos lo que se conoce como Traversing the DOM
 
-// Todo en JavaScript esta conectado en el document, la forma en que te moverás entre diferentes elementos se le conoce como Traversing the DOM, ir recorriendolo..
+// To.do en JavaScript esta conectado en el document, la forma en que te moverás
+// entre diferentes elementos se le conoce como Traversing the DOM, ir recorriendolo..
 
 
 const navegacion = document.querySelector('.navegacion');
-console.log(navegacion);
+console.log("%cnavegacion: %o", "color: red ;",navegacion);
 
 // Cada elemento en la navegación los diferentes elementos se les conoce como Nodos... y podrás listarlos de la siguiente forma...
-console.log(navegacion.childNodes);
+console.log("%cnavegacion.childNodes: %o", "color: red ;",navegacion.childNodes);
 
 // también existe algo llamado Children
-console.log(navegacion.children)
+console.log("%cnavegacion.children: %o", "color: red ;",navegacion.children);
 
 // La diferencia es que childNodes te va a mostrar hasta los espacios en blanco, children te muestra solo los elementos...
 
 // Hay mucha información aqui...
-console.log(navegacion.children[0].nodeType) // Tipo de Node = 1 es un eleemnto
-console.log(navegacion.children[0].nodeName) // Que etiqueta es...
+// Tipo de Node = 1 es un eleemnto
+console.log("%cnavegacion.children[0].nodeType: %o", "color: red ;",navegacion.children[0].nodeType);
 
+// Que etiqueta es...
+console.log("%cnavegacion.children[0].nodeName: %o", "color: red ;",navegacion.children[0].nodeName);
 
 
 // Por ejemplo si selecciono el primer card...
 
 const card = document.querySelector('.card');
-console.log(card.nodeType);
-console.log(card.nodeName);
+
+console.log("%ccard.nodeType: %o", "color: red ;",card.nodeType);
+console.log("%ccard.nodeName: %o", "color: red ;",card.nodeName);
 
 // 1 = Elemento
 // 2 - Atributo
@@ -35,16 +39,18 @@ console.log(card.nodeName);
 
 // en javascript puedes seleccionar un elemento y navegar en sus diferentes elementos... por ejemplo el card...
 
-console.log(card.children);
+console.log("%ccard.children: %o", "color: red ;",card.children);
 
 // Si quieres acceder a ese div con la clase de info puedes colocar...
-console.log(card.children[1]);
+
+console.log("%ccard.children[1]: %o", "color: red ;",card.children[1]);
 
 // Si quieres accedera  los elementos hijos de ese info... recuerda puedes anidar las propiedades.
-console.log(card.children[1].children[1]);
+
+console.log("%ccard.children[1].children[1]: %o", "color: red ;",card.children[1].children[1]);
 
 // Acceder al titulo
-console.log(card.children[1].children[1].textContent);
+console.log("%ccard.children[1].children[1].textContent: %o", "color: red ;",card.children[1].children[1].textContent);
 
 // Modificar ese titulo con un traversing
 card.children[1].children[1].textContent = 'Cambiando el Texto con traversing...'
@@ -76,12 +82,13 @@ console.log(navegacion.firstChild)
 console.log(navegacion.firstElementChild);
 
 // Cambiar el primer texto...
-navegacion.firstElementChild.textContent = 'Nuevo Enlace...'
-+
+navegacion.firstElementChild.textContent = 'Nuevo Enlace...';
 
 
 
-// En el video anterior vimos como hacer traversing de un elemento padre hacia el hijo, JavaScript también te permite seleccionar un elemento hijo e ir navegando hacia el padre...
+
+// En el video anterior vimos como hacer traversing de un elemento padre hacia el hijo,
+// JavaScript también te permite seleccionar un elemento hijo e ir navegando hacia el padre...
 
 
 // vamos a seleccionar el primer enlace...
@@ -104,7 +111,8 @@ console.log(enlace.parentElement.parentElement)
 
 
 
-// En JavaScript también es posible de hacer traversing a elementos que estan en el mismo nivel , digamos el vecino aunque en javascript se les conoce como hermanos...
+// En JavaScript también es posible de hacer traversing a elementos que estan en el mismo nivel ,
+// digamos el vecino aunque en javascript se les conoce como hermanos...
 
 console.log(enlace);
 console.log(enlace.nextElementSibling);

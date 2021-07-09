@@ -1,4 +1,4 @@
-// En este video estaremos viendo eventos que ocurren con el mouse
+// eventos que ocurren con el mouse
 
 const nav = document.querySelector('.navegacion');
 
@@ -24,4 +24,4 @@ nav.addEventListener('mouseout', () => {
 // click - similar, de hecho es probablemente el más utilizado..
 // dbclick - doble click como cuando quieres abrir un archivo
 // mouseup - al soltar
-// 
+//

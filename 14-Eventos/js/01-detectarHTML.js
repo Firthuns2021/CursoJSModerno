@@ -9,7 +9,9 @@
 // Al llenar un formulario de airbnb y ver la galería de fotos también son eventos..
 
 
-// Todos los eventos utilizan el método en el document de addEventListener, este registra un evento en especifico, como puede ser un click en un enlace o imagen, submit a un formulario, o cuando el usuario escribe...
+// Todos los eventos utilizan el método en el document de addEventListener, este registra un
+// evento en especifico, como puede ser un click en un enlace o imagen, submit a un formulario,
+// o cuando el usuario escribe...
 
 // Por lo tanto la sintaaxis es de las sig forma...
 
@@ -25,4 +27,4 @@ console.log(1)
     }) // Nota todos los eventos que hay disponibles
 console.log(3);
 
-// En el siguiente video estaremos viendo eventos que ocurren con el mouse!
+
