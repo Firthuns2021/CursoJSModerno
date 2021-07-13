@@ -69,3 +69,10 @@ form {
 .sitio-web:hover {
     color: white;
 }
+
+table {
+    margin: auto;
+}
+thead {
+    background-color: #0FA0CE;
+}
