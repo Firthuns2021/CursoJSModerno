@@ -1,4 +1,5 @@
-// Las Classes en JavaScript llegaron hasta hace pocos años, muchas personas no consideraban a javascript como un lenguaje serio ya que la programación orientada a objetos era el object constructor y los métodos eran los prototypes...
+// Las Classes en JavaScript llegaron hasta hace pocos años, muchas personas no consideraban a javascript
+// como un lenguaje serio ya que la programación orientada a objetos era el object constructor y los métodos eran los prototypes...
 
 
 // Así que en 2015 llegaron las classes a javascript, que solo es una mejora en la sintaxis, al final sigue siendo un object constructor con sus prototypes..
@@ -20,7 +21,8 @@ class Cliente { // El Nombre debe ser en mayusculas... Y esta forma se le conoce
 }
 
 
-//Si recuerdas previamente instanciabamos nuestro objecto con... para pasar esos valores las classes introducieron lo que se conoce como constructores... en algunos lenguajes el constructor es el mismo nombre de la clase pero en javascript es constructaor
+//Si recuerdas previamente instanciabamos nuestro objecto con... para pasar esos valores las classes introducieron lo que se conoce
+// como constructores... en algunos lenguajes el constructor es el mismo nombre de la clase pero en javascript es constructaor
 const juan = new Cliente('Juan', 400);
 
 console.log(juan);

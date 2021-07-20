@@ -1,7 +1,10 @@
 
 // Creando un Set
 // Un set te permite crear una lista de valores sin duplicados.
-// Pocas veces los veo que se utilizan, muchas personas prefieren crear arreglos y evitar duplicados, pero sería más sencillo con un set... de hecho en algunas ocasiones termina siendo mejor opción que un arreglo o un objeto...
+// Pocas veces los veo que se utilizan, muchas personas prefieren
+// crear arreglos y evitar duplicados, pero sería más sencillo con un set...
+// de hecho en algunas ocasiones termina siendo mejor opción que un arreglo
+// o un objeto...
 
 let carrito = new Set();
 carrito.add('Camisa');

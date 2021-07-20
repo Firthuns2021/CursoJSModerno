@@ -6,7 +6,8 @@ function Cliente(nombre, saldo) {
 }
 
 // Obtener Tipo de Cliente
-Cliente.prototype.tipoCliente = function()  { // Con prototypes tienes que utilizar function, function buscara en el mismo objeto mientras que un arrow function irá hacia la ventana global marcandote un undefined
+// Con prototypes tienes que utilizar function, function buscara en el mismo objeto mientras que un arrow function irá hacia la ventana global marcandote un undefined
+Cliente.prototype.tipoCliente = function()  {
     let tipo;
     if(this.saldo > 10000) {
         tipo = 'Gold';

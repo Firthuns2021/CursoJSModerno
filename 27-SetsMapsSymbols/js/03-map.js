@@ -1,8 +1,12 @@
 
 // MAPS
-// Listas ordenadas en llave - valor, donde el tipo y el valor pueden ser cualquier tipo, a diferencia de un objeto puede tener la llave de cualquier tipo de dato...
+// Listas ordenadas en llave - valor, donde el tipo y el valor pueden ser
+// cualquier tipo, a diferencia de un objeto puede tener la llave de
+// cualquier tipo de dato...
 
-// y en cuanto a performance los maps tienen mejor performance que los objetos, son especialmente diseñados para agregar o quitar elementos así como recorrer, también cuando son muy grandes tienen mejor performance que un objeto
+// y en cuanto a performance los maps tienen mejor performance que los objetos,
+// son especialmente diseñados para agregar o quitar elementos así como recorrer,
+// también cuando son muy grandes tienen mejor performance que un objeto
 
 let cliente = new Map();
 

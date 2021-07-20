@@ -1,6 +1,7 @@
-// De la misma forma que puedes heredar un constructor con Prototoypes y sus métodos, también puedes heredar una clase, es una de las caracteristica que hhay en POO
+// De la misma forma que puedes heredar un constructor con Prototoypes y sus métodos,
+// también puedes heredar una clase, es una de las caracteristica que hhay en POO
 
-class Cliente { 
+class Cliente {
 
     constructor( nombre, saldo ) {
         this.nombre = nombre;

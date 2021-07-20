@@ -1,4 +1,6 @@
-// Constructor para Seguro
+/** revisar video */
+
+// Constructor para Seguro/
 function Seguro(marca, anio, tipo) {
     this.marca = marca;
     this.anio = anio;
@@ -44,10 +46,10 @@ Seguro.prototype.cotizarSeguro = function() {
 }
 
 // Todo lo que se muestra
-function Interfaz() {}
+function UI() {}
 
 // Mensaje que se imprime en el HTML
-Interfaz.prototype.mostrarMensaje = function(mensaje, tipo) {
+UI.prototype.mostrarMensaje = function(mensaje, tipo) {
     const div = document.createElement('div');
 
     if(tipo === 'error') {
@@ -65,7 +67,7 @@ Interfaz.prototype.mostrarMensaje = function(mensaje, tipo) {
 }
 
 // Imprime el resultado de la cotización
-Interfaz.prototype.mostrarResultado = function(seguro, total) {
+UI.prototype.mostrarResultado = function(seguro, total) {
     const resultado = document.querySelector('#resultado');
     let marca;
     switch(seguro.marca) {
@@ -100,7 +102,7 @@ Interfaz.prototype.mostrarResultado = function(seguro, total) {
 
 }
 
-Interfaz.prototype.llenarOpciones = function () {
+UI.prototype.llenarOpciones = function () {
     const max = new Date().getFullYear(),
         min = max - 20;
 
@@ -114,7 +116,7 @@ Interfaz.prototype.llenarOpciones = function () {
 }
 
 // Crear instancia de Interfaz
-const interfaz = new Interfaz();
+const interfaz = new UI();
 
 document.addEventListener('DOMContentLoaded', () => {
     interfaz.llenarOpciones()
